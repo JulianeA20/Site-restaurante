@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Home - Juli's Pizza</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/wpp3.png" alt="Whatsapp"></a>
+    <div class="container"></div>
+    <div class="content-1"></div>
+    <div class="content-2"></div>
+    <div class="content-3">
+        <a href="https://api.whatsapp.com/send?phone=5571986778077&
+        text=Gostaria%20de%20receber%20mais%20informações?" class="icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     </div>
+
+
     <header>
         <nav>
             <ul id="navegation">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Pedido</a></li>
             </ul>
         </nav>
     </header>
-    <div class="imagens">
-        <img src="imagens/48448-pizza_frango_com_catupiry.png" alt="Pizza de Frango c/ Catupiry">
-        <img src="imagens/pizza_calabresa_e_mussarela_4389_600_square.jpg" alt="Pizza de Calabresa">
-        <img src="imagens/729408_orig.png" alt="Pizza de 4 Queijos">
+
+    <div class="gallery">
+        <figure class="galerry__item gallery__item--1">
+            <img src="img/pizza_frango_com_catupiry.png.crdownload" class="gallery__img" alt="Imagem 1">
+        </figure>
+        <figure class="galerry__item gallery__item--2">
+            <img src="img/calabresa.png" class="gallery__img" alt="Imagem 2">
+        </figure>
+        <figure class="galerry__item gallery__item--3">
+            <img src="img/4-queijos.png" class="gallery__img" alt="Imagem 3">
+        </figure>
     </div>
+
     <table class="table1" border="1">
         <thead class="thead1">
             <tr>
@@ -46,7 +63,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="imagens/pizza_calabresa_e_mussarela_4389_600_square.jpg" alt="Pizza Calabresa" width="40">
+                    <img src="img/calabresa.png" alt="Pizza Calabresa" width="40">
                 </td>
                 <td>Calabresa</td>
                 <td>Calabresa, mussarela e orégano</td>
@@ -57,7 +74,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="imagens/729408_orig.png" alt="Pizza 4 Queijos" width="40">
+                    <img src="img/4-queijos.png" alt="Pizza 4 Queijos" width="40">
                 </td>
                 <td>4 Queijos</td>
                 <td>Molho de tomate, mussarela, provolone, gorgonzola e parmesão</td>
@@ -68,7 +85,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="imagens/48448-pizza_frango_com_catupiry.png" alt="Pizza Frango com catupiry" width="40">
+                    <img src="img/pizza_frango_com_catupiry.png.crdownload" alt="Pizza Frango com catupiry" width="40">
                 </td>
                 <td>Frango c/ catupiry</td>
                 <td>Molho de tomate, frango, catupiry e orégano</td>
@@ -79,6 +96,7 @@
             </tr>
         </tbody>
     </table>
+
     <table class="table2" border="1" align="center">
         <thead class="thead2">
             <tr>
@@ -91,7 +109,7 @@
         <tbody class="tbody2">
             <tr>
                 <td colspan="2">
-                    <img src="imagens/Bebida-latinha-Png-800x445.png" alt="Refrigerante Lata" width="45">
+                    <img src="img/refri-lata.png" alt="Refrigerante Lata" width="45">
                 </td>
                 <td>Refrigerante - Lata</td>
                 <td>Coca, Coca Zero, Fanta, Sprite, Guaraná Antártica</td>
@@ -99,7 +117,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="imagens/refri_1l_33196_1.jpg" alt="Refrigerante 1L" width="45">
+                    <img src="img/refri-1L.png" alt="Refrigerante 1L" width="45">
                 </td>
                 <td>Refrigerante - 1L</td>
                 <td>Coca, Pepsi, Fanta, Guaraná Antártica</td>
@@ -107,7 +125,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="imagens/heineken.png" alt="Heineken" width="45">
+                    <img src="img/heineken.png" alt="Heineken" width="45">
                 </td>
                 <td>Heineken</td>
                 <td>600ml</td>
@@ -115,8 +133,10 @@
             </tr>
         </tbody>
         </table>
+
     <div class="div">
-        <a href="#" class="pedido">Faça seu pedido</a>
+        <a href="#" class="pedido"><b>Faça seu pedido</b></a>
     </div>
+
 </body>
 </html>
