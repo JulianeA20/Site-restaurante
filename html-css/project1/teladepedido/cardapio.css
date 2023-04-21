@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap);
+
+
+
 :root {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -18,6 +23,7 @@ img {
     align-items: center;
     padding: 3rem;
     gap: 2rem;
+    background-color: rgb(51, 22, 22);
   }
   
   header .logo {
@@ -49,7 +55,7 @@ img {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #ff4006;
     transition: 0.4s
   }
   
@@ -59,7 +65,7 @@ img {
   
   a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
   }
 
 .icon {
@@ -78,6 +84,7 @@ img {
     z-index: 100;
     box-shadow: 2px 2px 2px 
     #c0bdbd;
+    transition: 0.4s;
 }
 
 .icon:hover {
@@ -152,6 +159,12 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
+    transition: 0.4s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.2);
+    transition: ease 0.6s;
 }
 
 table, th, td {
@@ -209,7 +222,7 @@ th, td {
 }
   
 #bebidas table img {
-    width: 5rem;
+    width: 6rem;
 }
 
 .pedido {
@@ -223,9 +236,11 @@ th, td {
 
 .pedido a {
     text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
     color: #fff;
     background-color: rgb(255, 154, 82);
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid transparent;
     transition: 0.4s;
@@ -237,4 +252,22 @@ th, td {
     background: transparent;
     box-shadow: 2px 2px 20px 
     rgb(255, 154, 82);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 13px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(65, 43, 43);
+}
+
+footer a{
+    color:white
+}
+
+footer a:hover{
+    color: rgb(250, 116, 20);
 }
