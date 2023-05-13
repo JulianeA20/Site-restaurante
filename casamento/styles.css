@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 600px;
+
+}
+
+.foto-casal {
+    display: flex;
+    align-items: ;
+    max-width: 100%;
+    width: vw;
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+}
