@@ -1,0 +1,14 @@
+* {
+    width: 100%;
+
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+}

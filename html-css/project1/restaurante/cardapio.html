@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardapio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Home - Juli's Pizza</title>
+    <title>Cardápio - Juli's Pizza</title>
 </head>
 <body>
     <header>
+        <h1>Logo</h1>
         <nav>
-            <ul id="navegation">
+            <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="#">Contato</a></li>
-                <li><a href="pedido.html">Pedido</a></li>
+                <button class="btnLogin-popup">Login</button>
             </ul>
         </nav>
+        
     </header>
     <main>
-        <section id="home">
+        <section class="home">
             <div class="icon-whats">    
                 <a href="https://api.whatsapp.com/send?phone=5571986778077&" class="icon" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
-            <header>
+            <header class="img">
                 <h1>Juli's Pizza</h1>
                 <h2>Sabor e qualidade são os segredos do sucesso !</h2>
                 <div class="opacity"></div>
@@ -50,10 +49,10 @@
                 </figure>
             </div>
         </section>
-        <section id="cardapio">
+        <section class="cardapio">
             <table>
                 <caption>Pizzas</caption>
-                <thead class="thead1">
+                <thead>
                     <tr>
                         <th rowspan="2">*</th>
                         <th rowspan="2">Sabores</th>
@@ -67,7 +66,7 @@
                         <td>Família</td>
                     </tr>
                 </thead>
-                <tbody id="tbody1">
+                <tbody>
                     <tr>
                         <td>
                             <img src="img/calabresa.png" alt="Pizza Calabresa" width="40">
@@ -104,7 +103,7 @@
                 </tbody>
             </table>
         </section>
-            <section id="bebidas">
+            <section class="bebidas">
                 <table>
                     <caption>Bebidas</caption>
                     <thead>
@@ -115,10 +114,10 @@
                             <th>Preço</th>
                         </tr>
                     </thead>
-                    <tbody class="tbody2">
+                    <tbody>
                         <tr>
                             <td colspan="2">
-                                <img src="img/refri-lata.png" alt="Refrigerante Lata" width="45">
+                                <img src="img/refri-lata.png" alt="Refrigerante Lata">
                             </td>
                             <td>Refrigerante - Lata</td>
                             <td>Coca, Coca Zero, Fanta, Sprite, Guaraná Antártica</td>
@@ -126,7 +125,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <img src="img/refri-1L.png" alt="Refrigerante 1L" width="45">
+                                <img src="img/refri-1L.png" alt="Refrigerante 1L">
                             </td>
                             <td>Refrigerante - 1L</td>
                             <td>Coca, Pepsi, Fanta, Guaraná Antártica</td>
@@ -134,7 +133,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <img src="img/heineken.png" alt="Heineken" width="45">
+                                <img src="img/heineken.png" alt="Heineken">
                             </td>
                             <td>Heineken</td>
                             <td>600ml</td>
@@ -144,11 +143,13 @@
                 </table>
             </section>
         <div class="pedido">
-            <a href="pedido.html" class="pedido"><b>Faça seu pedido</b></a>
+            <a href="pedido.html"><b>Faça seu pedido</b></a>
         </div>
-        <section id="contato">
-
-        </section>
     </main>
+    <footer>
+        Site desenvolvido por <a href="https://github.com/JulianeA20" 
+        target="_blank">JulianeA.</a> - Copyright © 2023 - 
+        Todos os direitos reservados
+    </footer>
 </body>
 </html>

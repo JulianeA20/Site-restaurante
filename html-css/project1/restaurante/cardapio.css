@@ -1,7 +1,5 @@
-:root {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap);
 
 * {
     margin: 0px;
@@ -9,19 +7,28 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 18rem;
-  }
-  
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(65, 43, 43);
     display: flex;
-    align-items: center;
-    padding: 3rem;
-    gap: 2rem;
+    justify-content: space-between;
   }
   
   header .logo {
     width: 5rem;
+  }
+  
+  img {
+    width: 18rem;
   }
   
   nav {
@@ -49,7 +56,7 @@ img {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #ff4006;
     transition: 0.4s
   }
   
@@ -59,7 +66,7 @@ img {
   
   a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
   }
 
 .icon {
@@ -78,6 +85,7 @@ img {
     z-index: 100;
     box-shadow: 2px 2px 2px 
     #c0bdbd;
+    transition: 0.4s;
 }
 
 .icon:hover {
@@ -88,11 +96,11 @@ img {
     transition: ease 0.6s;
 }
 
-#home {
+.home {
     text-align: center;
   }
   
-#home header {
+.home header {
     background: url("./img/pizza2.png") ;
     background-size: cover;
     position: relative;
@@ -102,15 +110,16 @@ img {
     color: #fff
 }
   
-#home header .opacity {
+.home header .opacity {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgb(110, 90, 90, 0.8);
 }
   
-#home header h1 {
+.home header h1 {
     position: relative;
     z-index: 2;
     font-size: 7rem;
@@ -118,7 +127,7 @@ img {
     margin-top: 2rem;
 }
   
-#home header h2 {
+.home header h2 {
     position: relative;
     z-index: 2;
     font-family: 'Dancing Script', cursive;    
@@ -126,16 +135,22 @@ img {
     margin-top: -3rem;
 }
   
-#home h4 {
+.home h4 {
     margin: 7rem 0 2rem;
     font-size: 4rem;
 }
   
-#home p {
+.home p {
     font-size: 2.4rem;
     padding-inline: 10rem;
     margin-inline: auto;
     max-width: 120rem;
+}
+
+.img {
+    display: flex;
+    position: relative;
+
 }
 
 .gallery {
@@ -152,6 +167,12 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
+    transition: 0.4s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.2);
+    transition: ease 0.6s;
 }
 
 table, th, td {
@@ -160,7 +181,7 @@ table, th, td {
     margin: 30px auto 0;
 }
 
-#cardapio {
+.cardapio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +189,7 @@ table, th, td {
     font-size: 1.6rem;
 }
 
-#cardapio table caption {
+.cardapio table caption {
     font-family: 'Montserrat', sans-serif;   
     font-size: 2.8rem;
     font-weight: 700;
@@ -179,7 +200,7 @@ th, td {
     padding: 0.8rem;
 }
   
-#cardapio table img {
+.cardapio table img {
     width: 5rem;
 }
 
@@ -189,7 +210,7 @@ table, th, td {
     margin: 30px auto 0;
 }
 
-#bebidas {
+.bebidas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +218,7 @@ table, th, td {
     font-size: 1.6rem;
 }
 
-#bebidas table caption {
+.bebidas table caption {
     font-family: 'Montserrat', sans-serif;   
     font-size: 2.7rem;
     font-weight: 700;
@@ -208,8 +229,8 @@ th, td {
     padding: 0.8rem;
 }
   
-#bebidas table img {
-    width: 5rem;
+.bebidas table img {
+    width: 6rem;
 }
 
 .pedido {
@@ -223,9 +244,11 @@ th, td {
 
 .pedido a {
     text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
     color: #fff;
     background-color: rgb(255, 154, 82);
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid transparent;
     transition: 0.4s;
@@ -237,4 +260,22 @@ th, td {
     background: transparent;
     box-shadow: 2px 2px 20px 
     rgb(255, 154, 82);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 13px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(65, 43, 43);
+}
+
+footer a{
+    color:white
+}
+
+footer a:hover{
+    color: rgb(250, 116, 20);
 }
